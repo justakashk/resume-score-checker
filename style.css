@@ -1,0 +1,68 @@
+<style>
+  .resume-checker-container {
+    background: #fff;
+    padding: 20px;
+    border:solid black;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  #resume-checker-file-input {
+    display: none;
+  }
+  .custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #8775f5;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #resume-checker-button {
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #8775f5;
+    border: solid #8775f5;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  #resume-checker-result {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  #resume-checker-loading {
+    margin-top: 15px;
+    height: 6px;
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+  }
+  .loading-bar {
+    width: 0%;
+    height: 100%;
+    background: #8775f5;
+    animation: loadingAnim 2s infinite;
+  }
+  @keyframes loadingAnim {
+    0% { width: 0%; }
+    50% { width: 80%; }
+    100% { width: 0%; }
+  }
+  .positive-feedback {
+    color: black;
+    margin-left: 20px;
+    list-style-type: disc;
+  }
+  .negative-feedback {
+    color: red;
+    margin-left: 20px;
+    list-style-type: disc;
+  }
+   
+  </style>
